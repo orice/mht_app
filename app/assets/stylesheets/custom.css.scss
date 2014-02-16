@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 section {
@@ -26,6 +26,10 @@ section {
 
 textarea {
   resize: vertical;
+}
+
+.container{
+  width: 100%;
 }
 
 .center {
@@ -57,6 +61,15 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+  text-align: center;
+  border-bottom: 3px solid #e5e5e5;
+  //display: inline-block;
+  color: #616263;
+  font-size: 150%;
+  font-weight: lighter;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -75,11 +88,21 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  margin-left: 5%;
   &:hover {
     color: white;
     text-decoration: none;
   }
 }
+
+#top_container {
+  width: 100%;
+}
+
+#home_about_nav {
+  margin-right:5%;
+}
+
 
 /* footer */
 
@@ -100,6 +123,7 @@ footer {
   ul {
     float: right;
     list-style: none;
+    margin-right:10px;
     li {
       float: left;
       margin-left: 10px;
@@ -174,26 +198,57 @@ input {
   @extend .error;
 }
 
+/* Main Page */
+
+#main_pic {
+  max-width:100%; 
+  width: auto;
+  // max-height:100%;
+}
+
+#home_page_hero_unit {
+  background-image: url('doc.jpg');
+  margin: 0px;
+  padding: 0px;
+  background-size: 100%;
+  height: 480px;
+  opacity:1.3;
+}
+
+
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-right: 15px;
-  padding-left: 15px;
+#solution_row {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin:0 auto;
+  float:none;
 }
-
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
+.marketing .span4 {
   text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
+
+.marketing .span4 p {
+
 }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+
+/* Pad the edges of the mobile views a bit */
+.marketing {
+  width: 90%;
+}
+
+.row {
+  margin-left: 0;
+}
+
+.centered {
+    display: block;
+    margin-left: 44%;
+    text-align: center;
+    float: none;
 }
 
 
@@ -214,51 +269,38 @@ input {
 
 
 /* RESPONSIVE CSS
--------------------------------------------------- */
+    -------------------------------------------------- */
 
-@media (min-width: 768px) {
+    @media (max-width: 979px) {
 
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-right: 0;
-    padding-left: 0;
-  }
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
 
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left:  15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left:  0;
-  }
 
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
+    @media (max-width: 767px) {
 
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
 
 /* Users index */
 
@@ -273,4 +315,4 @@ input {
       border-bottom: 1px solid $grayLighter;
     }
   }
-}
+  }
