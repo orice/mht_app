@@ -1,11 +1,149 @@
 <% provide(:title, @user.name) %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-</div>
+<div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav" id="side-nav">
+          <li>
+            <a href="#" class="text-left">
+                          <b>
+                            Patients
+                          </b>
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                          Patient 1
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                          Patient 2
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                          Patient 3
+                        </a>
+          </li>
+          <li>
+            <a href="#">
+                          Patient 4
+                        </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div class="row" id="row-top">
+            <div class="col-md-12">
+              <p class="lead text-center">
+              </p>
+              <center>
+                <h2>
+                  Mindful Health Dashboard Overview
+                </h2>
+              </center>
+              <p>
+              </p>
+              <h4>
+                Care team on staff: 4
+              </h4>
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">40% Complete (success)</span>
+                </div>
+              </div>
+              <h4>
+                Green patients: 8
+              </h4>
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+                aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                  <span class="sr-only">20% Complete</span>
+                </div>
+              </div>
+              <h4>
+                Cautionary patients: 6
+              </h4>
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                  <span class="sr-only">60% Complete (warning)</span>
+                </div>
+              </div>
+              <h4>
+                Critical patients: 2
+              </h4>
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                  <span class="sr-only">80% Complete</span>
+                </div>
+              </div>
+              <p>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <center>
+                  <h2>
+                    Manage Patients
+                  </h2>
+                  <p>
+                    Add patients, remove exsisting patients, and more.
+                  </p>
+                  <p>
+                    <a class="btn btn-primary btn-lg" role="button">Manage Now</a>
+                  </p>
+                </center>
+              </div>
+              <p>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="jumbotron">
+                <center>
+                  <h2>
+                    Manage Care Team
+                  </h2>
+                  <p>
+                    Configure care team memberships and profiles.
+                  </p>
+                  <p>
+                    <a class="btn btn-primary btn-lg" role="button">Manage Now</a>
+                  </p>
+                </center>
+              </div>
+              <p>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="well well-sm">
+                <b>Recent user activity</b>
+                <a href="#" class="btn btn-xs pull-right btn-info">Review Activity</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="well well-sm">
+                <b>Physician on staff: Dr. Robertson</b>
+                <a href="#" class="btn btn-xs pull-right btn-info">Contact Now</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="well well-sm">
+                <b>Questions? Contact Mindful Health</b>
+                <a href="#" class="btn btn-xs pull-right btn-info">Contact Us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </span>
