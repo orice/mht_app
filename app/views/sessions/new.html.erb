@@ -1,31 +1,57 @@
 <% provide(:title, "Sign in") %>
 <h1>Sign in</h1>
-<form role ="form">
-<div class = "container-fluid signin">
+<div class="container signin">
+<form role="form">
   <div class="form-group">
-  <div class="row" id="email">
+    <label for="inputEmail" class="control-label">Email:</label>
+    
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
   
-    <%= form_for(:session, url: sessions_path) do |f| %>
-
-      <%= f.label :email %>
   </div>
-  <div class="row">
-      <%= f.text_field :email %>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Password:</label>
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
   </div>
-</div>
-<div class="form-group">
-  <div class= "row" id = "password">
-      <%= f.label :password %>
+  <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+    </div>
   </div>
-  <div class="row">
-      <%= f.password_field :password %>
+  <div class="form-group">
+      <button type="submit" class="btn btn-lg btn-primary">Sign in</button>
   </div>
- </div>
-  <div class="row">
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-    <% end %>
-
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-  </div>
-</div>
 </form>
+</div>
+  <!--<div class="container-fluid signin">
+    <div class="row email">
+      <div class="span12" style="margin: 0 auto;">
+        <form class="form-horizontal" "width: 400px; margin: 0 auto;">
+
+          <%= form_for(:session, url: sessions_path) do |f| %>
+          <%= f.label :email %>
+      
+          <%= f.text_field :email %>
+      </div>
+    </div>
+    <div class="row password">
+      <div class="span4">
+        <%= f.label :password %> 
+        <%= f.password_field :password %>
+      </div>
+    </div>
+    <div class="row">
+      
+        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+        <% end %>
+   
+    </div>
+    <div class="row">
+      
+        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+     
+    </div>
+  </div>-->
+ 
+
